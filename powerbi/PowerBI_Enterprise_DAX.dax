@@ -1,0 +1,130 @@
+// =========================================================================
+// ENTERPRISE POWER BI DAX MEASURES: 7-MODULE ACADEMIC & PLACEMENT ECOSYSTEM
+// Copy and paste into Power BI Desktop under "New Measure"
+// =========================================================================
+
+// -------------------------------------------------------------------------
+// MODULE 1 & 2: Institutional & Academic Performance Metrics
+// -------------------------------------------------------------------------
+
+Total Enrolled Students = 
+COUNTROWS('PowerBI_Enterprise_Unified')
+
+Average Prior CGPA = 
+AVERAGE('PowerBI_Enterprise_Unified'[prior_cgpa])
+
+Average Predicted SGPA = 
+AVERAGE('PowerBI_Enterprise_Unified'[predicted_sgpa])
+
+Average Lecture Attendance = 
+AVERAGE('PowerBI_Enterprise_Unified'[attendance_rate])
+
+Low Attendance Deficit Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    'PowerBI_Enterprise_Unified'[attendance_rate] < 75.0
+)
+
+High Risk Cohort Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    'PowerBI_Enterprise_Unified'[risk_tier] = "High Risk"
+)
+
+Academic At-Risk Rate = 
+DIVIDE([High Risk Cohort Count], [Total Enrolled Students], 0)
+
+Active Backlog Rate = 
+DIVIDE(
+    CALCULATE(COUNTROWS('PowerBI_Enterprise_Unified'), 'PowerBI_Enterprise_Unified'[backlogs] > 0),
+    [Total Enrolled Students],
+    0
+)
+
+// -------------------------------------------------------------------------
+// MODULE 3 & 4: AI Learning & Career Planning Alignment
+// -------------------------------------------------------------------------
+
+Average Career Fit Score = 
+AVERAGE('PowerBI_Enterprise_Unified'[career_match_score])
+
+High Career Alignment Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    'PowerBI_Enterprise_Unified'[career_match_score] >= 85.0
+)
+
+Career Alignment Percentage = 
+DIVIDE([High Career Alignment Count], [Total Enrolled Students], 0)
+
+// -------------------------------------------------------------------------
+// MODULE 5: Training & Skill Assessments
+// -------------------------------------------------------------------------
+
+Average Coding Benchmark = 
+AVERAGE('PowerBI_Enterprise_Unified'[coding_score])
+
+Average Aptitude Benchmark = 
+AVERAGE('PowerBI_Enterprise_Unified'[aptitude_score])
+
+Average Mock Interview Score = 
+AVERAGE('PowerBI_Enterprise_Unified'[mock_interview_score])
+
+Training Attendance Average = 
+AVERAGE('PowerBI_Enterprise_Unified'[training_attendance])
+
+Interview Ready Candidates = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    'PowerBI_Enterprise_Unified'[mock_interview_score] >= 80.0
+)
+
+// -------------------------------------------------------------------------
+// MODULE 6: Placement Pipeline & Corporate Drives
+// -------------------------------------------------------------------------
+
+Total Placed Students = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    LEFT('PowerBI_Enterprise_Unified'[placement_status], 6) = "Placed"
+)
+
+Overall Placement Rate = 
+DIVIDE([Total Placed Students], [Total Enrolled Students], 0)
+
+Tier 1 Dream Offers Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    'PowerBI_Enterprise_Unified'[placement_status] = "Placed - Tier 1 (Dream)"
+)
+
+Tier 1 Dream Placement Rate = 
+DIVIDE([Tier 1 Dream Offers Count], [Total Enrolled Students], 0)
+
+Active Drive Candidates = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    'PowerBI_Enterprise_Unified'[placement_status] = "In Progress / Active Drives"
+)
+
+Candidates Requiring Upskilling = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    'PowerBI_Enterprise_Unified'[placement_status] = "Needs Upskilling"
+)
+
+// -------------------------------------------------------------------------
+// MODULE 7: AI Career & Placement Readiness Assistant
+// -------------------------------------------------------------------------
+
+Average Resume ATS Score = 
+AVERAGE('PowerBI_Enterprise_Unified'[resume_ats_score])
+
+High Placement Readiness Cohort = 
+CALCULATE(
+    COUNTROWS('PowerBI_Enterprise_Unified'),
+    'PowerBI_Enterprise_Unified'[placement_readiness_pct] >= 75.0
+)
+
+Readiness Conversion Index = 
+DIVIDE([High Placement Readiness Cohort], [Total Enrolled Students], 0)

@@ -1,0 +1,9 @@
+career_id,career_title,domain,avg_salary,target_gpa,core_skills
+data_scientist,Data Scientist,Data & AI,$125,000 / yr,3.3,"Python, SQL, Machine Learning, Statistics, Data Visualization, Pandas, Scikit-Learn"
+ml_engineer,Machine Learning Engineer,Data & AI,$135,000 / yr,3.4,"Python, Machine Learning, Deep Learning, Docker, PyTorch/TensorFlow, MLOps, API Development"
+cloud_solutions_architect,Cloud Solutions Architect,Cloud & Infrastructure,$140,000 / yr,3.0,"AWS, Cloud Computing, Docker, Kubernetes, Linux, Networking, Terraform"
+full_stack_dev,Full Stack Software Engineer,Software Engineering,$115,000 / yr,3.1,"JavaScript/TypeScript, React, Python, Node.js, SQL, Git, REST APIs"
+cybersecurity_analyst,Cybersecurity & Security Operations Analyst,Cybersecurity,$110,000 / yr,3.1,"Networking, Linux, Information Security, Python, Vulnerability Assessment, SIEM/Wireshark, Cryptography"
+product_manager,Technical Product Manager / Business Analyst,Product & Management,$120,000 / yr,3.2,"Data Visualization, SQL, Agile Methodology, Requirements Gathering, Product Analytics, Market Research"
+data_engineer,Data Engineer,Data & AI,$128,000 / yr,3.2,"SQL, Python, Data Warehousing, ETL Pipelines, Docker, Apache Spark, Cloud Computing"
+ui_ux_frontend,UI/UX & Frontend Design Technologist,Design & Frontend,$105,000 / yr,3.0,"React, JavaScript/TypeScript, CSS/Tailwind, Figma, User Research, Prototyping, Accessibility"

@@ -1,0 +1,106 @@
+// =========================================================================
+// POWER BI DAX MEASURES: ACADEMIC PERFORMANCE & CAREER PLANNING SYSTEM
+// Copy and paste these measures into Power BI Desktop under "New Measure"
+// =========================================================================
+
+// -------------------------------------------------------------------------
+// 1. Core Cohort & Academic KPIs
+// -------------------------------------------------------------------------
+
+Total Students = 
+COUNTROWS('PowerBI_Academic_Career_Unified')
+
+Avg Prior GPA = 
+AVERAGE('PowerBI_Academic_Career_Unified'[prior_gpa])
+
+Avg Predicted Final GPA = 
+AVERAGE('PowerBI_Academic_Career_Unified'[ml_predicted_gpa])
+
+GPA Variance Delta = 
+[Avg Predicted Final GPA] - [Avg Prior GPA]
+
+Avg Attendance Rate = 
+AVERAGE('PowerBI_Academic_Career_Unified'[attendance_rate])
+
+Avg Weekly Study Hours = 
+AVERAGE('PowerBI_Academic_Career_Unified'[study_hours_per_week])
+
+Avg Midterm Score = 
+AVERAGE('PowerBI_Academic_Career_Unified'[midterm_score])
+
+Avg Assignment Rate = 
+AVERAGE('PowerBI_Academic_Career_Unified'[assignment_completion_rate])
+
+// -------------------------------------------------------------------------
+// 2. Risk & Early Warning Analytics
+// -------------------------------------------------------------------------
+
+High Risk Student Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Academic_Career_Unified'),
+    'PowerBI_Academic_Career_Unified'[ml_predicted_risk] = "High Risk"
+)
+
+Moderate Risk Student Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Academic_Career_Unified'),
+    'PowerBI_Academic_Career_Unified'[ml_predicted_risk] = "Moderate Risk"
+)
+
+Low Risk Student Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Academic_Career_Unified'),
+    'PowerBI_Academic_Career_Unified'[ml_predicted_risk] = "Low Risk"
+)
+
+At-Risk Percentage = 
+DIVIDE([High Risk Student Count], [Total Students], 0)
+
+Low Attendance Alert Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Academic_Career_Unified'),
+    'PowerBI_Academic_Career_Unified'[attendance_rate] < 75.0
+)
+
+Multiple Backlog Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Academic_Career_Unified'),
+    'PowerBI_Academic_Career_Unified'[past_failures] >= 2
+)
+
+// -------------------------------------------------------------------------
+// 3. AI Career Pathway & Readiness Metrics
+// -------------------------------------------------------------------------
+
+Avg Career Match Score = 
+AVERAGE('PowerBI_Academic_Career_Unified'[career_match_score])
+
+Highly Career Ready Count = 
+CALCULATE(
+    COUNTROWS('PowerBI_Academic_Career_Unified'),
+    'PowerBI_Academic_Career_Unified'[career_match_score] >= 85.0
+)
+
+Percentage Career Ready = 
+DIVIDE([Highly Career Ready Count], [Total Students], 0)
+
+// -------------------------------------------------------------------------
+// 4. Conditional Formatting & Indicator Helpers
+// -------------------------------------------------------------------------
+
+Risk Hex Color = 
+SWITCH(
+    SELECTEDVALUE('PowerBI_Academic_Career_Unified'[ml_predicted_risk]),
+    "High Risk", "#EF4444",       // Red
+    "Moderate Risk", "#F59E0B",   // Amber
+    "Low Risk", "#10B981",        // Green
+    "#6B7280"                     // Gray default
+)
+
+GPA Delta KPI Status = 
+SWITCH(
+    TRUE(),
+    [GPA Variance Delta] > 0, "▲ Improving (+)",
+    [GPA Variance Delta] < 0, "▼ Declining (-)",
+    "▬ Stable"
+)

@@ -1,0 +1,8 @@
+dept_id,dept_name,hod,degree,benchmark_attendance
+MCA,Master of Computer Applications,Dr. Shivaleela Arlimatti,PG,80.0
+MBA,Master of Business Administration,Dr. Snehal Deshmukh,PG,80.0
+CS,Computer Science & Engineering,Dr. Patil Ramgouda B.,UG,80.0
+Mechanical,Mechanical Engineering,Dr. Mulik P. V.,UG,80.0
+E&TC,Electronics & Telecommunication,Dr. S. T. Jadhav,UG,80.0
+CSBS,Computer Science & Business Systems,Dr. Arvind Iyer,UG,80.0
+Cyber Security,Cyber Security Engineering,Prof. Rajesh Dhananjay Gade,UG,80.0

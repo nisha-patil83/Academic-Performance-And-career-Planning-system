@@ -1,0 +1,51 @@
+student_id,name,department,prior_gpa,attendance_rate,study_hours_per_week,midterm_score,assignment_completion_rate,past_failures,stress_level,final_gpa,ml_predicted_gpa,ml_predicted_risk,gpa_variance,risk_prob_low,risk_prob_moderate,risk_prob_high,recommended_career,career_match_score,key_missing_skills
+STU1001,Aarav Sharma,Data Science & AI,3.85,96.0,26.0,94.5,98.0,0,2,3.92,3.89,Low Risk,0.04,0.92,0.07,0.01,Machine Learning Engineer,92.5,Docker, MLOps, PyTorch/TensorFlow
+STU1002,Aditi Rao,Computer Science,3.40,84.5,16.5,78.0,85.0,0,3,3.35,3.38,Low Risk,-0.02,0.81,0.16,0.03,Full Stack Software Engineer,88.0,React, Node.js
+STU1003,Rohan Verma,Information Technology,2.35,58.0,6.0,46.0,52.0,2,5,2.15,2.20,High Risk,-0.15,0.02,0.18,0.80,Cloud Solutions Architect,45.0,Kubernetes, Terraform, AWS
+STU1004,Priya Patel,Software Engineering,3.65,92.0,22.0,89.0,94.0,0,2,3.70,3.68,Low Risk,0.03,0.89,0.10,0.01,Full Stack Software Engineer,94.0,AWS, Docker
+STU1005,Vikram Singh,Electrical Engineering,2.70,68.0,9.0,62.0,65.0,1,4,2.60,2.64,Moderate Risk,-0.06,0.15,0.65,0.20,Cybersecurity & Security Operations Analyst,55.0,SIEM/Wireshark, Cryptography
+STU1006,Ananya Gupta,Data Science & AI,3.75,94.0,24.0,91.0,95.0,0,2,3.80,3.78,Low Risk,0.03,0.91,0.08,0.01,Data Scientist,95.0,Scikit-Learn, Statistics
+STU1007,Kabir Mehta,Computer Science,2.10,50.0,4.0,40.0,45.0,3,5,1.95,2.02,High Risk,-0.08,0.01,0.11,0.88,Full Stack Software Engineer,38.0,React, Node.js, SQL
+STU1008,Neha Iyer,Data Science & AI,3.15,82.0,14.0,76.0,84.0,0,3,3.20,3.18,Low Risk,0.03,0.76,0.21,0.03,Data Engineer,78.0,Apache Spark, Docker, ETL
+STU1009,Rahul Nair,Information Technology,2.85,74.0,11.0,68.0,72.0,1,3,2.80,2.82,Moderate Risk,-0.03,0.28,0.58,0.14,Cloud Solutions Architect,62.0,Kubernetes, Terraform
+STU1010,Sneha Kulkarni,Software Engineering,3.90,98.0,28.0,97.0,100.0,0,1,3.95,3.94,Low Risk,0.04,0.96,0.04,0.00,Machine Learning Engineer,91.0,MLOps, Deep Learning
+STU1011,Karan Joshi,Computer Science,2.50,62.0,7.0,55.0,60.0,1,4,2.45,2.48,High Risk,-0.02,0.08,0.38,0.54,Full Stack Software Engineer,52.0,JavaScript/TypeScript, React
+STU1012,Divya Menon,Data Science & AI,3.55,89.0,19.0,85.0,91.0,0,2,3.60,3.58,Low Risk,0.03,0.85,0.13,0.02,Data Scientist,90.0,Machine Learning, Big Data
+STU1013,Siddharth Das,Electrical Engineering,3.05,79.0,13.0,73.0,80.0,0,3,3.08,3.06,Low Risk,0.01,0.68,0.27,0.05,Cybersecurity & Security Operations Analyst,68.0,Information Security, SIEM
+STU1014,Pooja Hegde,Information Technology,2.25,54.0,5.0,44.0,48.0,2,5,2.10,2.15,High Risk,-0.10,0.02,0.15,0.83,Cybersecurity & Security Operations Analyst,42.0,Linux, Networking, SIEM
+STU1015,Arjun Reddy,Software Engineering,3.30,81.0,15.0,77.0,83.0,0,3,3.32,3.30,Low Risk,0.00,0.77,0.19,0.04,Full Stack Software Engineer,85.0,Docker, Node.js
+STU1016,Tanvi Deshmukh,Data Science & AI,3.60,91.0,21.0,88.0,93.0,0,2,3.65,3.63,Low Risk,0.03,0.88,0.10,0.02,Machine Learning Engineer,87.0,PyTorch/TensorFlow, MLOps
+STU1017,Varun Chopra,Computer Science,2.95,76.0,12.0,70.0,77.0,0,3,2.95,2.94,Moderate Risk,-0.01,0.45,0.48,0.07,Technical Product Manager / Business Analyst,72.0,Agile, Product Analytics
+STU1018,Ishita Sen,Data Science & AI,3.25,83.0,15.5,78.0,86.0,0,3,3.30,3.28,Low Risk,0.03,0.78,0.19,0.03,Data Engineer,82.0,Data Warehousing, Apache Spark
+STU1019,Manish Pandey,Electrical Engineering,2.40,59.0,6.5,50.0,55.0,2,4,2.30,2.35,High Risk,-0.05,0.04,0.28,0.68,Cloud Solutions Architect,48.0,AWS, Docker, Linux
+STU1020,Meera Nambiar,Software Engineering,3.80,95.0,25.0,93.0,97.0,0,2,3.85,3.83,Low Risk,0.03,0.93,0.06,0.01,Full Stack Software Engineer,96.0,Docker, Git
+STU1021,Gaurav Bhatt,Information Technology,2.65,66.0,8.5,60.0,63.0,1,4,2.55,2.58,Moderate Risk,-0.07,0.12,0.62,0.26,Cybersecurity & Security Operations Analyst,58.0,Information Security, Cryptography
+STU1022,Kavya Pillai,Data Science & AI,3.45,87.0,18.0,83.0,89.0,0,3,3.50,3.48,Low Risk,0.03,0.83,0.15,0.02,Data Scientist,91.0,Scikit-Learn, Statistics
+STU1023,Akash Saxena,Computer Science,2.20,52.0,5.0,43.0,47.0,3,5,2.05,2.10,High Risk,-0.10,0.01,0.14,0.85,Full Stack Software Engineer,40.0,React, Node.js
+STU1024,Riya Bansal,Software Engineering,3.70,93.0,23.0,90.0,95.0,0,2,3.75,3.72,Low Risk,0.02,0.90,0.09,0.01,UI/UX & Frontend Design Technologist,92.0,Figma, Prototyping
+STU1025,Naveen Kumar,Electrical Engineering,2.90,75.0,11.5,69.0,75.0,0,3,2.90,2.89,Moderate Risk,-0.01,0.40,0.52,0.08,Cloud Solutions Architect,64.0,Kubernetes, Linux
+STU1026,Deepika Padukone,Data Science & AI,3.88,97.0,27.0,96.0,99.0,0,1,3.94,3.92,Low Risk,0.04,0.95,0.04,0.01,Machine Learning Engineer,94.0,MLOps, PyTorch/TensorFlow
+STU1027,Harsh Vardhan,Information Technology,2.30,56.0,5.5,45.0,50.0,2,5,2.18,2.24,High Risk,-0.06,0.02,0.22,0.76,Cloud Solutions Architect,46.0,AWS, Docker
+STU1028,Shreya Ghosh,Computer Science,3.50,88.0,18.5,84.0,90.0,0,2,3.55,3.52,Low Risk,0.02,0.84,0.14,0.02,Technical Product Manager / Business Analyst,84.0,Product Analytics, Agile
+STU1029,Nikhil Jain,Software Engineering,2.75,70.0,10.0,64.0,68.0,1,4,2.70,2.72,Moderate Risk,-0.03,0.22,0.61,0.17,Full Stack Software Engineer,68.0,Node.js, Docker
+STU1030,Anjali Tiwari,Data Science & AI,3.10,80.0,13.5,75.0,82.0,0,3,3.15,3.12,Low Risk,0.02,0.72,0.24,0.04,Data Engineer,80.0,Apache Spark, ETL
+STU1031,Sameer Qureshi,Electrical Engineering,2.15,48.0,3.5,38.0,42.0,3,5,1.90,1.98,High Risk,-0.17,0.01,0.09,0.90,Cybersecurity & Security Operations Analyst,36.0,Networking, Linux, SIEM
+STU1032,Pallavi Shinde,Computer Science,3.62,91.5,21.5,88.5,93.5,0,2,3.68,3.65,Low Risk,0.03,0.88,0.11,0.01,Machine Learning Engineer,88.0,Deep Learning, MLOps
+STU1033,Ayush Soni,Information Technology,3.00,78.0,13.0,72.0,79.0,0,3,3.02,3.01,Low Risk,0.01,0.65,0.29,0.06,Cloud Solutions Architect,70.0,Docker, Kubernetes
+STU1034,Bhavna Chawla,Software Engineering,2.45,61.0,7.0,54.0,58.0,2,4,2.35,2.41,High Risk,-0.04,0.06,0.34,0.60,UI/UX & Frontend Design Technologist,50.0,Figma, React
+STU1035,Kunal Kapoor,Data Science & AI,3.72,93.5,23.5,90.5,94.5,0,2,3.78,3.75,Low Risk,0.03,0.90,0.09,0.01,Data Scientist,93.0,Data Visualization, Statistics
+STU1036,Swati Mishra,Electrical Engineering,2.80,72.0,10.5,66.0,70.0,1,3,2.75,2.77,Moderate Risk,-0.03,0.26,0.59,0.15,Cloud Solutions Architect,60.0,AWS, Linux
+STU1037,Mohit Agarwal,Computer Science,3.35,83.5,16.0,79.0,85.5,0,3,3.38,3.36,Low Risk,0.01,0.79,0.18,0.03,Full Stack Software Engineer,86.0,React, Node.js
+STU1038,Natasha Paul,Software Engineering,3.82,95.5,25.5,93.5,97.5,0,1,3.88,3.85,Low Risk,0.03,0.94,0.05,0.01,Full Stack Software Engineer,95.0,Docker, Git
+STU1039,Prateek Yadav,Information Technology,2.05,46.0,3.0,36.0,40.0,3,5,1.85,1.92,High Risk,-0.13,0.01,0.08,0.91,Cybersecurity & Security Operations Analyst,34.0,Linux, Networking
+STU1040,Ritika Seth,Data Science & AI,3.30,85.0,16.5,80.0,87.0,0,3,3.35,3.33,Low Risk,0.03,0.79,0.18,0.03,Data Engineer,84.0,Data Warehousing, SQL
+STU1041,Yash Singhal,Electrical Engineering,2.60,65.0,8.0,58.0,62.0,1,4,2.50,2.54,Moderate Risk,-0.06,0.10,0.60,0.30,Cybersecurity & Security Operations Analyst,56.0,SIEM/Wireshark, Information Security
+STU1042,Monika Roy,Computer Science,3.58,90.0,20.0,87.0,92.0,0,2,3.62,3.60,Low Risk,0.02,0.86,0.12,0.02,Technical Product Manager / Business Analyst,85.0,Product Analytics, Agile
+STU1043,Alok Trivedi,Software Engineering,2.92,75.5,12.0,70.5,76.0,0,3,2.94,2.92,Moderate Risk,0.00,0.42,0.50,0.08,Full Stack Software Engineer,74.0,Docker, REST APIs
+STU1044,Kritika Lal,Data Science & AI,3.95,99.0,30.0,98.0,100.0,0,1,3.98,3.97,Low Risk,0.02,0.98,0.02,0.00,Machine Learning Engineer,96.0,MLOps, PyTorch/TensorFlow
+STU1045,Sanjay Jha,Information Technology,2.38,57.0,6.0,47.0,51.0,2,5,2.22,2.28,High Risk,-0.10,0.03,0.25,0.72,Cloud Solutions Architect,49.0,AWS, Docker
+STU1046,Gayatri Bhattacharya,Computer Science,3.20,81.5,14.5,76.5,83.0,0,3,3.24,3.22,Low Risk,0.02,0.75,0.22,0.03,Full Stack Software Engineer,82.0,JavaScript/TypeScript, Git
+STU1047,Manav Kaushik,Electrical Engineering,3.10,79.5,13.5,73.5,80.5,0,3,3.12,3.10,Low Risk,0.00,0.70,0.26,0.04,Cloud Solutions Architect,72.0,Docker, Linux
+STU1048,Tanya Bajaj,Software Engineering,3.68,92.5,22.5,89.5,94.5,0,2,3.72,3.70,Low Risk,0.02,0.89,0.10,0.01,UI/UX & Frontend Design Technologist,91.0,Figma, CSS/Tailwind
+STU1049,Chirag Grover,Data Science & AI,2.48,61.5,7.5,54.5,59.0,2,4,2.38,2.44,High Risk,-0.04,0.07,0.36,0.57,Data Scientist,58.0,Machine Learning, Python
+STU1050,Isha Mathur,Information Technology,3.42,86.5,17.5,82.5,88.5,0,2,3.46,3.44,Low Risk,0.02,0.82,0.16,0.02,Cloud Solutions Architect,84.0,Terraform, Kubernetes
