@@ -828,15 +828,6 @@ if not st.session_state["logged_in"]:
                         "email": chosen_hod["email"]
                     }
                     st.rerun()
-                    "password": "faculty123",
-                    "name": chosen_hod["name"],
-                    "role": "👨‍🏫 Faculty Member",
-                    "branch": chosen_hod["dept"],
-                    "emp_id": chosen_hod["id"],
-                    "subject": chosen_hod["subj"],
-                    "email": chosen_hod["email"]
-                }
-                st.rerun()
 
         with d_col2:
             st.markdown("#### 👔 T&P Officer Persona")
